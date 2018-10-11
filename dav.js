@@ -685,7 +685,7 @@ var serviceDiscovery = _co2['default'].wrap(regeneratorRuntime.mark(function cal
           host: endpoint.host,
           pathname: '/.well-known/' + options.accountType
         });
-        req = request.basic({ method: 'GET' });
+        req = request.basic({ method: 'GET', contentType: 'text/html;charset=utf-8' });
         context$1$0.prev = 5;
         context$1$0.next = 8;
         return options.xhr.send(req, uri, { sandbox: options.sandbox });
